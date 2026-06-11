@@ -8,5 +8,8 @@
   "keywords": [],
   "author": "Bruno Vidal",
   "license": "ISC",
-  "description": "A simple D&D server application built with Node.js and Express."
+  "description": "A simple D&D server application built with Node.js and Express.",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }
