@@ -1,18 +1,7 @@
 // Importing express module
-const express = require("express");
-const app = express();
+import app from './app.js';
+import config from './config/config.js';
 
-// Handling GET / request
-app.use("/", (req, res, next) => {
-  res.send("express server");
-});
-
-// Handling GET /hello request
-app.get("/hello", (req, res, next) => {
-  res.send("hello response");
-});
-
-// Server setup
-app.listen(3000, () => {
-  console.log("Server is Running");
+app.listen(config.port, () => {
+  console.log(`Server running on port ${config.port}`);
 });

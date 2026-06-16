@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node dist/server.js",
-    "dev": "nodemon src/server.ts"
+    "dev": "nodemon --watch 'src/**/*.ts' --exec tsx src/server.ts",
+    "build": "tsc",
+    "lint": "eslint 'src/**/*.ts'"
   },
   "keywords": [],
   "author": "Bruno Vidal",
@@ -14,7 +16,8 @@
   "description": "A simple D&D server application built with Node.js and Express.",
   "dependencies": {
     "dotenv": "^17.4.2",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "mongoose": "^9.7.0"
   },
   "devDependencies": {
     "@types/express": "^5.0.6",
@@ -23,6 +26,7 @@
     "nodemon": "^3.1.14",
     "prettier": "^3.8.4",
     "ts-node": "^10.9.2",
+    "tsx": "^4.22.4",
     "typescript": "^6.0.3"
   }
 }
