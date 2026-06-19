@@ -6,10 +6,7 @@ import mongoose from 'mongoose';
 // const clientOptions = { serverApi: { version: '1', strict: true, deprecationErrors: true } };
 
 await mongoose
-  .connect(
-    process.env.MONGODB_URI ||
-      'mongodb+srv://bnovidal_db_user:AnjrrJKW2HQf7htd@dndbackenddb.aaczyvi.mongodb.net/?appName=DndBackendDB',
-  )
+  .connect(process.env.MONGODB_URI || '')
   .then(() => {
     console.log('Connected to MongoDB');
   })
