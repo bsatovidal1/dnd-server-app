@@ -9,6 +9,6 @@ const JobClassSchema = new Schema({
   description: String,
 });
 
-const JobClass = mongoose.model('JobClass', JobClassSchema);
+const JobClassModel = mongoose.model('JobClass', JobClassSchema);
 
-export default JobClass;
+export default JobClassModel;

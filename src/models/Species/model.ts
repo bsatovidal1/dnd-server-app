@@ -13,6 +13,6 @@ const SpeciesSchema = new Schema({
   imageUrl: String,
 });
 
-const Species = mongoose.model('Species', SpeciesSchema);
+const SpeciesModel = mongoose.model('Species', SpeciesSchema);
 
-export default Species;
+export default SpeciesModel;

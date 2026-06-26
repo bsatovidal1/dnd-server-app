@@ -13,6 +13,6 @@ const CharacterSchema = new Schema({
   imageUrl: String,
 });
 
-const Character = mongoose.model('Character', CharacterSchema);
+const CharacterModel = mongoose.model('Character', CharacterSchema);
 
-export default Character;
+export default CharacterModel;
